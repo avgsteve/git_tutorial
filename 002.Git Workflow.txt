@@ -15,3 +15,6 @@ git add .
 //
 echo world >> file1.txt
 (two >> means append)
+
+// remove file1
+git rm file2.txt
