@@ -1,0 +1,6 @@
+// 
+git log master..bugfix/test 
+# Lists the commits in the bugfix branch not in master
+
+git diff master..bugfix/test # Shows the summary of changes
+git diff --name-status bugfix/test # Shows only the name of changed files 
