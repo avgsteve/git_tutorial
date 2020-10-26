@@ -1,2 +1,17 @@
 git init
 git commit -m "initial comment"
+
+//
+git status
+
+//
+git add file1.txt file2.txt
+or
+git add *.txt
+or
+(add all)
+git add .
+
+//
+echo world >> file1.txt
+(two >> means append)
