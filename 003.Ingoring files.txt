@@ -1,0 +1,7 @@
+//
+mkdir logs
+
+//
+echo hello > logs/dev.log
+
+git status
