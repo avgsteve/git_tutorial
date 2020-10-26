@@ -41,9 +41,3 @@ git bisect good ca49180
 		fb0d184 Define the audience.
 		1ebb7a7 Define the objectives.
 		ca49180 (refs/bisect/good-ca4918083ec471878d58612142572f3367faf5fd) Initial commit.
-
-
-
-
-// reset bisect
-git bisect reset

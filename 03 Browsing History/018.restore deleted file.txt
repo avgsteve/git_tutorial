@@ -1,0 +1,27 @@
+// remove file
+git rm toc.txt
+
+// commit removal
+git commit -m "remove toc.txt"
+
+// Find the commit that deletes the file
+git log --oneline -- toc.txt
+
+  output:
+    275f2ab (HEAD -> master) remove toc.txt
+    a642e12 Add header to all pages.
+    50db987 Include the first section in TOC.
+    ca49180 Initial commit.
+
+// Restore file by checkout parent commit
+git checkout a642e12 toc.txt
+
+  output:
+    Updated 1 path from 246d37c
+
+
+// Check status
+git status -s
+
+// Commit restored file
+git commit -m "Restore toc.txt"
