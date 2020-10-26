@@ -1,0 +1,30 @@
+//
+git diff --staged
+
+//
+git config --global diff.tool vscode
+git config --global difftool.vscode.cmd "code --wait --diff $LOCAL $REMOTE"
+git config --global -e  (check setting files)
+
+// ===== SETTINGS for git =====
+[user]
+	email = steve.leng.dev@gmail.com
+	name = Steve Leng
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	editor = code --wait
+	autocrlf = true
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = "code --wait --diff $LOCAL $REMOTE"
+// ===== SETTINGS for git =====
+
+
+// Compare the diff in files
+git difftool
+git difftool --staged
