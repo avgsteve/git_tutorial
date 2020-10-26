@@ -5,3 +5,12 @@ mkdir logs
 echo hello > logs/dev.log
 
 git status
+
+//create new file
+touch .gitignore
+
+//
+echo logs/ > .gitignore
+
+// Use code editor to edit .gitignore file
+code .gitignore
