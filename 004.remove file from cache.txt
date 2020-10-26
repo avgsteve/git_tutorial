@@ -9,3 +9,11 @@ git rm -cached
 git rm --cached -r
 (allow recursive removal)
   ex:  git rm --cached -r bin/
+       git rm --cached -r bin2/
+
+       In terminal , will show rm 'bin2/app.bin'
+
+// then ...
+git ls-files
+
+// git status
