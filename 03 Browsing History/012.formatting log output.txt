@@ -1,0 +1,20 @@
+// === Use format string to customize output format ===
+// %an stands for author name
+git log --pretty=format:"hello %an"
+
+result: 
+hello Moshfegh Hamedani
+hello Moshfegh Hamedani
+hello Moshfegh Hamedani
+hello Moshfegh Hamedani
+...
+
+
+// %H = full hash
+git log --pretty=format:"%an committed %H"
+
+result: 
+Moshfegh Hamedani committed a642e1229e3cb69be9bf075d9fe5e752e9a17458
+Moshfegh Hamedani committed 50db98710ed4330773f1df55b2a177600d523c9e
+Moshfegh Hamedani committed 555b62e1ebb92c97fc69910ad0981a7d6dbbf8c6
+...
