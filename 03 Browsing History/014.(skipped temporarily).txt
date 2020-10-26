@@ -1,0 +1,11 @@
+// ==== Create alias for git command ====
+git config --global alias.lg "log --pretty=format:'%an committed %h'"
+
+git config --global -e
+
+// In .gitconfig file:
+[alias]
+	lg = log --pretty=format:'%an committed %h'
+
+// ==== Alias for unstaging all files ====
+git config --global alias.unstage "restore --staged ."
