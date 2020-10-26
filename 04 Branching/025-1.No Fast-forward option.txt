@@ -1,0 +1,32 @@
+//
+git switch -C bugfix/form
+code toc.txt
+
+
+//
+git log --oneline --all --graph
+
+* da85a92 (HEAD -> bugfix/form) update toc.txt
+* 1760635 (master, bugfix/test) mock up commit
+* 41a9b7e remove toc.txt
+* d1c8257 Restore toc.txt
+
+// Merge with no fast-forward option
+git switch master
+git merge --no-ff bugfix/form
+git log --oneline --all --graph
+
+    *   119c158 (HEAD -> master) Merge branch 'bugfix/form'
+    |\
+    | * 40b43dd (bugfix/form) update toc.txt 2
+    | * da85a92 update toc.txt
+    |/
+    * 1760635 (bugfix/test) mock up commit
+    * 41a9b7e remove toc.txt
+
+// *Disable ff merge option for local (current repo)  (switch master first)
+git config ff no
+
+// *Disable ff merge option for global (current repo)  (switch master first)
+
+git config --global ff no

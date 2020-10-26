@@ -1,0 +1,24 @@
+//
+git log --oneline --all --graph
+
+* 1760635 (bugfix/test) mock up commit
+* 41a9b7e (HEAD -> master) remove toc.txt
+* d1c8257 Restore toc.txt
+* 275f2ab remove toc.txt
+
+// switch back to master
+git switch master
+
+// merge branch
+git merge bugfix/test
+  Message:
+    Fast-forward
+      audience.txt | 2 +-
+      1 file changed, 1 insertion(+), 1 deletion(-)
+
+git log --oneline --all --graph
+
+* 1760635 (HEAD -> master, bugfix/test) mock up commit
+* 41a9b7e remove toc.txt
+* d1c8257 Restore toc.txt
+* 275f2ab remove toc.txt
