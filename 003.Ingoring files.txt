@@ -9,7 +9,7 @@ git status
 //create new file
 touch .gitignore
 
-//
+//write logs/ to .gitignore
 echo logs/ > .gitignore
 
 // Use code editor to edit .gitignore file
