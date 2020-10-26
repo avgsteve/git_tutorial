@@ -1,0 +1,14 @@
+//
+git status -s 
+(check status before add removing file command to stage)
+
+git rm file3.txt
+
+// commit change
+git status -s 
+(check status after add removing file command to stage)
+
+git commit -m 'delete file3.txt'
+
+// restore change
+git restore --source=HEAD~1 file3.txt
