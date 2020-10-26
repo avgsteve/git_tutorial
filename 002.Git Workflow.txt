@@ -18,3 +18,11 @@ echo world >> file1.txt
 
 // remove file1
 git rm file2.txt
+
+//
+git add file3.txt
+git add main.js
+git status
+
+//
+git
