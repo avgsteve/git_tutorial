@@ -25,6 +25,7 @@ git log --oneline --all --graph
     * 41a9b7e remove toc.txt
 
 // *Disable ff merge option for local (current repo)  (switch master first)
+
 git config ff no
 
 // *Disable ff merge option for global (current repo)  (switch master first)

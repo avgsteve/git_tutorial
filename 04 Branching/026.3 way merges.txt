@@ -1,0 +1,16 @@
+// Create new branch
+git switch -C feature/change-password
+
+ result:
+    *   119c158 (HEAD -> feature/change-password, master) Merge branch 'bugfix/form'
+
+// Modify file
+echo hello > change-password.txt
+git add .
+git commit -m "Build the change password form"
+
+// Switch back to master
+git switch master
+code objectives.txt
+git add .
+git commit -m "Update objectives.txt"
