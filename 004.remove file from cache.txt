@@ -1,0 +1,7 @@
+//
+git rm -h
+
+//
+git rm -cached
+(only remove from the index, index means staging area)
+

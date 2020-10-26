@@ -6,10 +6,10 @@ echo hello > logs/dev.log
 
 git status
 
-//create new file
+// Create new file
 touch .gitignore
 
-//write logs/ to .gitignore
+// Write logs/ to .gitignore
 echo logs/ > .gitignore
 
 // Use code editor to edit .gitignore file
