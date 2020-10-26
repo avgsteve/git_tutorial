@@ -1,0 +1,27 @@
+// See all commit history logs
+git log
+
+// Short form of logs
+git log --oneline
+
+// Short form of logs (oldest on top)
+git log --oneline --reverse
+
+// Show  single commit (indetifier)
+git show 7f77c30
+
+// show last commit
+Git show HEAD~1
+
+// show file in last commit
+Git show HEAD~1:.gitignore
+
+// Show whole file structure like a tree
+git ls-tree HEAD~1
+(files are blob, folders are tree)
+
+//  Show folder or file in commit tree
+git show 1b4144c6415435177f4fc703d5bd7e91870e0089
+tree 1b4144c6415435177f4fc703d5bd7e91870e0089
+
+dev.log
