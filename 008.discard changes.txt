@@ -1,0 +1,12 @@
+// edit file
+echo "hello world" >> file1.js
+
+// discard changes
+git restore file1.js
+
+// discard all changes
+git restore .
+
+// remove untracked file
+git clean
+(should use " git clean -fd ")
