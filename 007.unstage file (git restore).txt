@@ -1,0 +1,10 @@
+// update file
+echo hello > logs/dev.log
+echo hello >> logs/dev.log
+
+// stage file
+git add .
+status -s
+
+// unstage file
+git restore --staged logs/dev.log
