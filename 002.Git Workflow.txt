@@ -25,4 +25,4 @@ git add main.js
 git status
 
 //
-git
+git mv main.js file1.js
