@@ -1,2 +1,12 @@
-//
-git logs
+// switch directory
+cd /d/git/git_tutorial/03 Browsing History/Venus
+
+// Check logs
+git log
+
+// List every file of every commit)
+git log --oneline --stat
+git log --stat
+
+// List every line of every changed file
+git log --oneline --patch

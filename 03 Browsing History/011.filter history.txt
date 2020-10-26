@@ -1,0 +1,32 @@
+// filter commits
+
+// show last 3 commits
+git log --oneline -3
+
+// filter with author
+git log --oneline --author="Mosh"
+
+// filter with Date (use before or after)
+git log --oneline --after="2020-08-17"
+
+// filter with Date
+git log --oneline --after="yesterday"
+git log --oneline --after="one week ago"
+
+// filter with commit message or subject (case sensitive operation)
+git log --oneline --grep="GUI"
+
+// search inside the commit (file patches) content
+git log --oneline -S"OBJECTIVES"
+git log --oneline -S"OBJECTIVES" --patch
+
+
+// === List commit in paticular range ===
+git log --oneline
+git log --oneline fb0d184..edb3594
+
+// === List commit history of single file ===
+git log --oneline toc.txt
+
+// === List "DETAILED" commit history of single file ===
+git log --oneline --patch -- toc.txt
