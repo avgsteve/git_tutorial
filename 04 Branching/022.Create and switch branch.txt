@@ -1,4 +1,4 @@
-// 
+// ================================
 git branch bugfix # Creates a new branch called bugfix
 git branch -m bugfix bugfix/signup-form # rename branch
 
@@ -7,6 +7,8 @@ git switch bugfix # Same as the above
 
 git switch -C bugfix # Creates and switches
 git branch -d bugfix # Deletes the bugfix branch
+// ================================
+
 
 //Edit file
 code audience.txt
