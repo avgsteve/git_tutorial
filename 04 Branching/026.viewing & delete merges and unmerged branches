@@ -6,7 +6,7 @@ git branch --merged
   feature/change-password
 
 // Show not merged branches
-git brance --no-merged
+git branch --no-merged
 
 // Delete merged branches
 git branch -d bugfix/form
