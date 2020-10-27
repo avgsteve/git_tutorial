@@ -1,0 +1,13 @@
+ref: https://gitbook.tw/chapters/rewrite-history/merge-multiple-commits-to-one-commit.html
+
+
+//
+git switch -C bugfix/photo-upload
+echo bugfix > photo-upload.txt
+git commit -am "Update in bug fix for photo upload"
+
+echo bugfix again > photo-uploadUI.txt
+
+//
+git switch main
+git merge --squash bugfix/photo-upload
