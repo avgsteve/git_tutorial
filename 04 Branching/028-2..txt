@@ -8,7 +8,7 @@ Another way of undo the merged branches
 git revert -m 1 HEAD
 
     (remark:
-    1 means first parent on master.
+        1 means first parent on master.
         -m, --mainline <parent-number>
                             select mainline parent
     )
