@@ -1,0 +1,40 @@
+ref: https://gitbook.tw/chapters/using-git/reset-commit.html
+
+// Before reset:
+    *   06d4fea (HEAD -> master) master and mergetest2 braches merged
+    |\
+    | * 279c1c6 (testmerge2) test merge 2
+    * | bced6f8 master branch test
+    |/
+    * 14ccb22 master branch 2
+
+
+// Reset (undo) to the last one commit:
+git reset --hard HEAD~1
+    
+    (see ref for reset options: --hard, --soft and --mixed)
+    message in terminal:
+        HEAD is now at bced6f8 master branch test
+ 
+// Use command:  git log --oneline --all --graph
+    * bced6f8 (HEAD -> master) master branch test
+    | * 279c1c6 (testmerge2) test merge 2
+    |/
+
+
+// ==== Undo the "undo" command ====
+git reset --hard 06d4fea
+
+    Terminal:  HEAD is now at 06d4fea master and mergetest2 braches merged
+
+    *   06d4fea (HEAD -> master) master and mergetest2 braches merged
+
+
+// Use command:  git log --oneline --all --graph
+
+*   06d4fea (HEAD -> master) master and mergetest2 braches merged
+|\
+| * 279c1c6 (testmerge2) test merge 2
+* | bced6f8 master branch test
+|/
+* 14ccb22 master branch 2
