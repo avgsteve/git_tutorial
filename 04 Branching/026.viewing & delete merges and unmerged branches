@@ -1,5 +1,5 @@
 // List all merged branches
-git brance --merged
+git branch --merged
 
   bugfix/form
   bugfix/test

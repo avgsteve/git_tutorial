@@ -1,0 +1,74 @@
+// Create new branch
+    git switch -C feature/change-password
+
+    result:
+        *   119c158 (HEAD -> feature/change-password, master) Merge branch 'bugfix/form'
+
+// Modify file
+    echo hello > change-password.txt
+
+// commit file
+    git add .
+    git commit -m "Build the change password form"
+
+    git log --oneline --all --graph
+
+        * 0c0d8e4 (HEAD -> feature/change-password) Update change-password.txt
+        * 7824e1c (master) Update objectives.txt
+
+// Switch back to master
+    git switch master
+    code change-password.txt
+    git add .
+    git commit -m "change-password.txt"
+
+
+//Check branch
+
+git log --oneline --all --graph
+
+    * eedc07c (HEAD -> master) change-password.txt
+    | * 0c0d8e4 (feature/change-password) Update change-password.txt
+    |/
+    * 7824e1c Update objectives.txt
+(要兩個branch都有新的commit才會diverge)
+
+
+// Use 3 way merge
+git merge feature/change-password
+
+// ====== If run into conflict of code ====
+## console will show git branch:  (master|MERGING)
+
+1) Open conflict file
+2) Click "Accept Current Change"
+or 3) Manually edit and merge changes with the command
+
+    git mergetool   
+
+4) git add .
+
+Will turn this:
+    Unmerged paths:
+    (use "git add <file>..." to mark resolution)
+            both modified:   change-password.txt
+
+Into this:        
+    All conflicts fixed but you are still merging.
+    (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   change-password.txt
+
+
+5) git commit -m "...."    to commit the merged conflict file
+
+then
+6) git log --oneline --all --graph
+
+*   06d4fea (HEAD -> master) master and mergetest2 braches merged
+|\
+| * 279c1c6 (testmerge2) test merge 2
+* | bced6f8 master branch test
+|/
+* 14ccb22 master branch 
