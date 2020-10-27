@@ -11,3 +11,30 @@ echo bugfix again > photo-uploadUI.txt
 //
 git switch main
 git merge --squash bugfix/photo-upload
+
+    message:
+        Updating fe06a2a..3e66958
+        Fast-forward
+        Squash commit -- not updating HEAD
+        04 Branching/029.Squash merging.txt | 13 +++++++++++++
+        photo-upload.txt                    |  1 +
+        photo-uploadUI.txt                  |  2 ++
+        3 files changed, 16 insertions(+)
+        create mode 100644 04 Branching/029.Squash merging.txt
+        create mode 100644 photo-upload.txt
+        create mode 100644 photo-uploadUI.txt
+
+    ## Then all files will be in staging area
+
+// then need to commit all files in another branch as ONE "squashed" history to main branch
+git commit -m "Squash commits in bugfix/photo-upload"
+
+// === The branch being "squashed" can't be found with this command:
+git branch --merged
+    need to use: " git branch --no-merged "
+
+// Delete this squashed branch    
+git branch -D bugfix/photo-upload
+
+
+
